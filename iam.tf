@@ -1,4 +1,4 @@
-resource "aws_iam_role" "role" {
+resource "aws_iam_role" "elasticsearchrole" {
   name = "elasticsearch-role"
 
   assume_role_policy = <<EOF
