@@ -24,7 +24,7 @@ POLICY
 
 resource "aws_iam_role_policy" "role_policy" {
   role = "${aws_iam_role.elasticsearchrole.id}"
-  name = "kong-role-policy"
+  name = "role-policy"
 
   policy = <<POLICY
 {
@@ -36,17 +36,7 @@ resource "aws_iam_role_policy" "role_policy" {
             "Resource": "*"
         },
         {
-            "Action": "ssm:GetParameter",
-            "Effect": "Allow",
-            "Resource": "*"
-        },
-        {
-          "Action": "rds:*",
-            "Effect": "Allow",
-            "Resource": "*"
-        },
-        {
-          "Action": "kms:*",
+          "Action": "ec2:*",
             "Effect": "Allow",
             "Resource": "*"
         }
