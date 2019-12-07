@@ -24,7 +24,7 @@ POLICY
 
 resource "aws_iam_role_policy" "role_policy" {
   role = "${aws_iam_role.elasticsearchrole.id}"
-  name = "role-policy"
+  name = "elasticsearch-role-policy"
 
   policy = <<POLICY
 {
