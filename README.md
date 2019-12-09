@@ -1,5 +1,6 @@
 # Elasticsearch
 Assignment
+
 Q.1  What did you choose to automate the provisioning and bootstrapping of the instance? Why
 
 - Automation: I used Terraform for provisioning the AWS resource.
@@ -27,3 +28,8 @@ Q.6 Was it a priority to make your code well structured, extensible, and reusabl
 
 Q.7. What sacrifices did you make due to time?
 - When launching the master node ,we need to configured our nodes IP in elasticsearch.yml.So SSL Automation connection is pending.
+
+
+REFERENCES:
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-security.html
