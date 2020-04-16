@@ -11,6 +11,3 @@ tar -xzvf elasticsearch-5.4.0.tar.gz
 
 cd /home/ubuntu/elasticsearch-5.4.0/bin
 ./elasticsearch-plugin install x-pack
-
-
-
